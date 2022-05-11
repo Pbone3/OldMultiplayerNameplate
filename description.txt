@@ -1,0 +1,3 @@
+Client side mod that changes the multiplayer nameplate to the same one used in 1.3 and before. Simple as that.
+
+Discord: https://discord.gg/296svw6r
