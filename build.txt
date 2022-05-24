@@ -1,8 +1,9 @@
 displayName = Old Multiplayer Nameplates
 author = pbone
-version = 1.0.1
+version = 1.0.2
 buildIgnore = build.txt, bin/*, obj/*, Thumbs.db, .*
 hideCode = false
 hideResources = false
 includeSource = true
 includePDB = false
+side = Client
