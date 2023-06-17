@@ -19,7 +19,7 @@ namespace OldMultiplayerNameplate
 			int screenHeight = Main.screenHeight;
 			Vector2 screenPosition = Main.screenPosition;
 			PlayerInput.SetZoom_UI();
-			float uIScale = Main.UIScale;
+			float uiScale = Main.UIScale;
 			for (int i = 0; i < 255; i++)
 			{
 				Player query = Main.player[i];
@@ -72,9 +72,9 @@ namespace OldMultiplayerNameplate
 					if (Main.LocalPlayer.gravDir == -1f)
 						vector2.Y = screenHeight - vector2.Y;
 
-					vector2 *= 1f / uIScale;
+					vector2 *= 1f / uiScale;
 					Vector2 vector4 = FontAssets.MouseText.Value.MeasureString(topLine);
-					vector2 += vector4 * (1f - uIScale) / 4f;
+					vector2 += vector4 * (1f - uiScale) / 4f;
 
 					if (num4 > 0f)
 					{
@@ -83,18 +83,18 @@ namespace OldMultiplayerNameplate
 						vector5.X = vector2.X + vector4.X / 2f - vector5.X / 2f;
 						vector5.Y = vector2.Y + vector4.Y / 2f - vector5.Y / 2f - 20f;
                         
-						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X - 2f, vector5.Y), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X + 2f, vector5.Y), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X, vector5.Y - 2f), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X, vector5.Y + 2f), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, vector5, color, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
+						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X - 2f, vector5.Y), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X + 2f, vector5.Y), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X, vector5.Y - 2f), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, new Vector2(vector5.X, vector5.Y + 2f), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+						DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, textValue, vector5, color, 0f, default, 1f, SpriteEffects.None, 0f);
 					}
                     
-					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X - 2f, vector2.Y), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X + 2f, vector2.Y), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X, vector2.Y - 2f), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X, vector2.Y + 2f), Color.Black, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, vector2, color, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
+					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X - 2f, vector2.Y), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X + 2f, vector2.Y), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X, vector2.Y - 2f), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, new Vector2(vector2.X, vector2.Y + 2f), Color.Black, 0f, default, 1f, SpriteEffects.None, 0f);
+					DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, topLine, vector2, color, 0f, default, 1f, SpriteEffects.None, 0f);
 				}
 			}
 		}
